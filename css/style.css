@@ -1,7 +1,7 @@
 /* Fonts start */
 
 @font-face {
-	font-family: "FreeSet Cyrillic";
+	font-family: "FreeSetC";
 	src: url("../fonts/freeset-cyrillic/freeset-cyrillic.eot"); /* IE9 Compat Modes */
 	src: url("../fonts/freeset-cyrillic/freeset-cyrillic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 		url("../fonts/freeset-cyrillic/freeset-cyrillic.otf") format("opentype"), /* Open Type Font */
@@ -14,7 +14,7 @@
 }
 
 @font-face {
-	font-family: "FreeSet Bold Cyrillic";
+	font-family: "FreeSetBC";
 	src: url("../fonts/freeset-bold-cyrillic/freeset-bold-cyrillic.eot"); /* IE9 Compat Modes */
 	src: url("../fonts/freeset-bold-cyrillic/freeset-bold-cyrillic.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
 		url("../fonts/freeset-bold-cyrillic/freeset-bold-cyrillic.otf") format("opentype"), /* Open Type Font */
@@ -91,26 +91,276 @@ html {
 
 
 body {
-	font-family: 'FreeSet Cyrillic';
+	width: 100%;
+	height: 100%;
+	font-family: 'FreeSetC';
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+    font-size: 1em;
+    line-height: 22px;
     color: #707070;
 }
 
+a {
+	text-decoration: none;
+}
+
+.onega-logo {
+	content: url(../img/icons/logo.svg);
+}
+
 .wrapper {
-	max-width: 1200px;
-	width: 100%;
+	width: 1200px;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
+
+.en-lang {
+	color: white;
+}
+
+.vertical-line {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.ch-lang {
+	color: white;
+}
+
+.cart-block {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3px;
+}
+
+.cart-count {
+	color: white;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+.cart-ico {
+	content: url(../img/icons/cart-ico.svg);
+}
+
+.login-ico {
+	content: url(../img/icons/login-ico.svg);
+}
+
+.arrow-ico {
+	
+}
+
+.button {
+
+}
+
+/*======================HEADER=========================*/
+
 .onega__header {
-	display: grid;
-	grid-template-rows: 1fr 1fr;
+	background: url(../img/hero_bg.jpg) top no-repeat;
+	background-size: cover;
+	height: 850px;
+	max-height: 90%;
+}
+
+.onega__header-gradient {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(1, 1, 1, 0) 100%);
+	
+}
+
+.onega__header-blocks {
+	padding-top: 18px;
+	align-items: center;
 }
 
 .onega__header-top {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	padding-bottom: 18px;
+}
+
+.onega__phone-block {
+	
+}
+
+.onega__phone::before {
+	content: url(../img/icons/phone-ico.svg);
+}
+
+.onega__phone {
+	font-family: 'FreeSetBC';
+	font-style: normal;
+	font-weight: 600;
+	line-height: 19px;
+	color: white;
+}
+
+.onega__socials {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+
+.socials-inst {
+	content: url(../img/icons/inst-ico.svg);
+}
+
+.socials-vk {
+	content: url(../img/icons/vk-ico.svg);
+}
+
+.socials-fb {
+	content: url(../img/icons/fb-ico.svg);
+}
+
+.socials-sova {
+	content: url(../img/icons/sova-ico.svg);
+}
+
+.onega__langs {
+	font-size: 13px;
+	line-height: 15px;
+}
+
+
+.header-top__menu {
+	font-size: 13px;
+	line-height: 15px;
+}
+
+.header-top__menu-list {
+
+}
+
+.header-top__list-item {
+	display: inline;
+	margin-right: 20px;
+}
+
+
+.header-top__link {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+
+.header-top__list-item:last-child {
+	margin-right: 0;
+}
+
+.onega__cart-login {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 18px;
+}
+
+.line {
+	content: '';
+	height: 1px;
+	width: 100%;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	margin-bottom: 20px;
+}
+
+.onega__header-bottom {
+	display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+	padding-bottom: 233px;
+}
+
+.header-bottom__menu {
+	
+}
+
+.header-bottom__menu-list {
+	
+}
+
+.header-bottom__list-item {
+	display: inline;
+	font-family: 'FreeSetBC';
+	padding-right: 30px;
+}
+
+.header-bottom__link {
+	font-size: 16px;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	letter-spacing: 0.5px;
+}
+
+.onega__title {
+	font-family: 'FreeSetBC';
+	font-weight: 600;
+	font-size: 64px;
+	line-height: 126.3%;
+	text-align: center;
+	color: #FFFFFF;
+	max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/*=======================MAIN==========================*/
+
+.onega__main {
+	margin-top: 80px;
+}
+
+
+.group-left {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.group__select-block {
+	text-align: left;
+}
+
+.group__select-title {
+	font-family: 'FreeSetBC';
+	font-weight: 600;
+	font-size: 34px;
+	line-height: 41px;
+	color: #000000;
+}
+
+.group__select-info {
+
+}
+
+.group__blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 50px;
+}
+
+.group__block {
+    text-align: left;
+}
+
+.group__block-title {
+
+}
+
+.group__block-info {
+
+}
+
+
+.group-rectangle {
+
+}
+
+.group__right {
+
 }
