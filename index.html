@@ -49,8 +49,8 @@
                     </nav>
                     <div class="onega__cart-login">
                         <div class="cart-block">
-                            <div class="cart-ico"></div>
-                            <p class="cart-count">1</p>
+                            <div id="checkout" class="cart-ico"></div>
+                            <p id="cart-content" class="cart-count">1</p>
                         </div>
                         <div class="login-ico"></div>
                     </div>
@@ -60,6 +60,19 @@
 
                 <div class="onega__header-bottom wrapper">
                     <a href="/" class="onega-logo"></a>
+
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <nav class="menu">
+                        <a href="#!" class="header-top__link">О нас</a>
+                        <a href="#!" class="header-top__link">Вопросы и ответы</a>
+                        <a href="#!" class="header-top__link">Отзывы</a>
+                        <a href="#!" class="header-top__link">Оплата и Доставка</a>
+                        <a href="#!" class="header-top__link">Контакты</a>
+                    </nav>
+
                     <nav class="header-bottom__menu">
                         <ul class="header-bottom__menu-list">
                             <li class="header-bottom__list-item">
@@ -203,7 +216,7 @@
                         <h2 class="group-products__product-title">Платок с символикой №12</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Платки</a></p>
                         <span class="group-products__product-price">4500 &#8381;</span>
-                        <button class="group-products__btn">
+                        <button data-id="1" class="group-products__btn">
                             Купить
                         </button>
                     </div>
@@ -404,5 +417,6 @@
             </div>
         </div>
     </footer>
+    <script src="./js/cart.js"></script>
 </body>
 </html>
