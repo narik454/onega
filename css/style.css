@@ -606,12 +606,13 @@ a {
 .onega__footer-blocks {
 	display: flex;
 	gap: 50px;
+	flex-wrap: wrap;
 }
 
 .footer__phone-email {
 	display: grid;
 	gap: 25px;
-	padding-right: 50px;
+	grid-template-rows: repeat(3, max-content);
 }
 
 .onega__footer-phone {
@@ -734,6 +735,53 @@ a {
     line-height: 17px;
 	text-align: center;
 }
+
+.footer__menu {
+
+}
+
+.footer__menu-title {
+	font-size: 22px;
+	line-height: 25px;
+	color: #FFFFFF;
+	margin-bottom: 35px;
+}
+
+.footer__menu-columns {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+
+.menu__first-column {
+	width: 262px;
+}
+
+.menu__second-column {
+	width: 262px;
+}
+
+.footer-menu__column-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.footer-menu__column-item:hover {
+	cursor: pointer;
+}
+
+.footer-menu__item-link {
+	line-height: 38px;
+	color: #FFFFFF;
+}
+
+.item-link__marker {
+	display: inline;
+	content: url(../img/icons/list-ico.svg);
+	width: 5px;
+}
+
 
 /*=======================FOOTER=END=========================*/
 
