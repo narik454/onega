@@ -76,28 +76,53 @@
                     <nav class="header-bottom__menu">
                         <ul class="header-bottom__menu-list">
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">история</a>
+                                <a href="#story-news" class="header-bottom__link">история</a>
                             </li>
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">новости</a>
+                                <a href="#story-news" class="header-bottom__link">новости</a>
                             </li>
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">магазин</a>
+                                <a href="#popular-products" class="header-bottom__link">магазин</a>
                             </li>
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">туры</a>
+                                <a href="#toors" class="header-bottom__link">туры</a>
                             </li>
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">экскурсии</a>
+                                <a href="#excursions" class="header-bottom__link">экскурсии</a>
                             </li>
                             <li class="header-bottom__list-item">
-                                <a href="#!" class="header-bottom__link">гостиница</a>
+                                <a href="#hotel" class="header-bottom__link">гостиница</a>
                             </li>
                             <li class="header-bottom__list-item">
                                 <a href="#!" class="header-bottom__link">музей</a>
+                                <ul class="list-item__inner-block">
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Ночь в музее 1</li>
+                                    </a>
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Ночь в музее 2</li>
+                                    </a>
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Ночь в музее 3</li>
+                                    </a>
+                                </ul>
                             </li>
                             <li class="header-bottom__list-item">
                                 <a href="#!" class="header-bottom__link">медиа</a>
+                                <ul class="list-item__inner-block">
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">СМИ о нас</li>
+                                    </a>
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Достопримечательности</li>
+                                    </a>
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Фотогаллерея</li>
+                                    </a>
+                                    <a href="#!" class="inner-block__item-link">
+                                        <li class="inner-block__item">Видеогаллерея</li>
+                                    </a>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
@@ -107,8 +132,18 @@
         </div>
     </header>
 
+    <div class="cart">
+        <h3 class="cart__title">корзина</h3>
+        <div class="cart__list">
+sdsdg
+        </div>
+        <div class="cart__total">
+
+        </div>
+    </div>
+
     <main class="onega__main">
-        <div class="group-left wrapper">
+        <div id="toors" class="group-left wrapper">
             <article class="group__select-block">
                 <h2 class="blocks-title">Туры</h2>
                 <p class="group__select-info">
@@ -139,7 +174,7 @@
         </div>
 
         <div class="group-rectangle">
-            <div class="group__right wrapper">
+            <div id="excursions" class="group__right wrapper">
                 <article class="group__select-block">
                     <h2 class="blocks-title">Экскурсии</h2>
                     <p class="group__select-info">
@@ -170,7 +205,7 @@
             </div>
         </div>
 
-        <div class="group-left wrapper">
+        <div id="hotel" class="group-left wrapper">
             <article class="group__select-block">
                 <h2 class="blocks-title">Гостиница</h2>
                 <p class="group__select-info">
@@ -201,7 +236,7 @@
         </div>
 
         <div class="group-rectangle">
-            <div class="group-products">
+            <div id="popular-products" class="group-products">
                 <div class="group-products__header wrapper">
                     <h2 class="group-products__title blocks-title">Популярные товары</h2>
                     <button class="next-page__button">
@@ -215,17 +250,15 @@
                         <img src="./img/shop/img-1.jpg" alt="img-1" class="onega__img">
                         <h2 class="group-products__product-title">Платок с символикой №12</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Платки</a></p>
-                        <span class="group-products__product-price">4500 &#8381;</span>
-                        <button data-id="1" class="group-products__btn">
-                            Купить
-                        </button>
+                        <p class="group-products__product-price"><span id="price">4500</span> &#8381;</p>
+                        <button class="group-products__btn">Купить</button>
                     </div>
     
                     <div class="group-products__product">
                         <img src="./img/shop/img-2.jpg" alt="img-2" class="onega__img">
                         <h2 class="group-products__product-title">Картина «Ледяное царство»</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Картины</a></p>
-                        <span class="group-products__product-price">13000 &#8381;</span>
+                        <p class="group-products__product-price"><span id="price">13000</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -233,7 +266,7 @@
                         <img src="./img/shop/img-3.jpg" alt="img-3" class="onega__img">
                         <h2 class="group-products__product-title">Батик «Морской»</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Платки</a></p>
-                        <span class="group-products__product-price sale">1300 &#8381;</span>
+                        <p class="group-products__product-price sale"><span id="price">1300</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -241,7 +274,7 @@
                         <img src="./img/shop/img-4.jpg" alt="img-4" class="onega__img">
                         <h2 class="group-products__product-title">Вязаная игрушка №3</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Игрушки</a></p>
-                        <span class="group-products__product-price">5700 &#8381;</span>
+                        <p class="group-products__product-price"><span id="price">5700</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -249,7 +282,7 @@
                         <img src="./img/shop/img-3.jpg" alt="img-3" class="onega__img">
                         <h2 class="group-products__product-title">Батик «Морской»</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Платки</a></p>
-                        <span class="group-products__product-price sale">1300 &#8381;</span>
+                        <p class="group-products__product-price sale"><span id="price">1300</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -257,7 +290,7 @@
                         <img src="./img/shop/img-1.jpg" alt="img-1" class="onega__img">
                         <h2 class="group-products__product-title">Платок с символикой №12</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Платки</a></p>
-                        <span class="group-products__product-price">4500 &#8381;</span>
+                        <p class="group-products__product-price"><span id="price">4500</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -265,7 +298,7 @@
                         <img src="./img/shop/img-4.jpg" alt="img-4" class="onega__img">
                         <h2 class="group-products__product-title">Вязаная игрушка №3</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Игрушки</a></p>
-                        <span class="group-products__product-price">5700 &#8381;</span>
+                        <p class="group-products__product-price"><span id="price">5700</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
     
@@ -273,7 +306,7 @@
                         <img src="./img/shop/img-2.jpg" alt="img-2" class="onega__img">
                         <h2 class="group-products__product-title">Картина «Ледяное царство»</h2>
                         <p class="group-products__label">Категория: <a href="#!" class="category-link">Картины</a></p>
-                        <span class="group-products__product-price">13000 &#8381;</span>
+                        <p class="group-products__product-price"><span id="price">13000</span> &#8381;</p>
                         <button class="group-products__btn">Купить</button>
                     </div>
                 </div>
@@ -281,7 +314,7 @@
         </div>
 
         <div class="onega__news-about wrapper">
-            <div class="onega__about-block">
+            <div id="story-news" class="onega__about-block">
                 <h2 class="blocks-title">Onega Story</h2>
                 <p class="onega__about-info">Разнообразный и богатый опыт консультация с широким активом влечет за собой процесс внедрения и модернизации систем массового участия.</p>
                 <button class="next-page__button">
@@ -417,6 +450,6 @@
             </div>
         </div>
     </footer>
-    <script src="./js/cart.js"></script>
+<script src="./js/cart.js"></script>
 </body>
 </html>
