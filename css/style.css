@@ -392,7 +392,7 @@ nav ul li:hover > ul {
 /*=======================CART==========================*/
 
 .cart {
-	display: flex;
+	display: none;
 	flex-direction: column;
 	position: fixed;
 	top: 0;
@@ -402,13 +402,6 @@ nav ul li:hover > ul {
 	height: 100%;
 	z-index: 999;
 	background: #F2F7FC;
-}
-
-::-webkit-scrollbar-thumb {
-	background: #232323;
-	opacity: 0.2;
-	border-radius: 100px;
-	width: 5px;
 }
 
 .cart__title {
@@ -425,7 +418,7 @@ nav ul li:hover > ul {
 
 .cart__list {
 	display: flex;
-	flex: 5;
+	flex: 6;
 	background: #FFFFFF;
 	padding: 20px 20px 20px 30px;
 }
@@ -433,8 +426,44 @@ nav ul li:hover > ul {
 .cart__total {
 	display: flex;
 	flex: 1;
+	padding: 30px;
+	flex-direction: column;
+    justify-content: space-between;
 }
 
+.cart__total-block {
+	display: flex;
+	justify-content: space-between;
+	column-gap: 10px;
+	font-family: 'FreeSetDemiC';
+	text-transform: uppercase;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	color: #000000;
+}
+
+.total-block__text {
+
+}
+
+.total-block__sum {
+	white-space: nowrap;
+}
+
+.cart__pay-btn {
+	border: 1px solid #BD0202;
+	border-radius: 5px;
+    height: 50px;
+    width: auto;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: center;
+	color: #BD0202;
+	overflow: hidden;
+}
 
 
 /*=======================MAIN==========================*/
