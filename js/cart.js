@@ -37,6 +37,7 @@ document.addEventListener('click', (e) => { // All document click for close cart
 
 button.forEach((btn, index) => { // Product buttons click
   btn.addEventListener('click', () => {
+    button[index].textContent = 'В корзине'
     cartItems.push(productTitle[index].textContent)
     cartCount.textContent = cartItems.length
     totalSum.textContent = parseInt(price[index].textContent) + parseInt(totalSum.textContent)

@@ -694,6 +694,18 @@ nav ul li:hover > ul {
 	color: #BD0202;
 }
 
+.group-products__btn:hover {
+	opacity: 0.5;
+}
+
+.group-products__btn:active, .group-products__btn:focus {
+	background-color: #E9ECEE;
+	border: 1px solid #E9ECEE;
+	color: #9AA2A9;
+	opacity: 1;
+	content: 'В корзине';
+}
+
 .onega__news-about {
 	display: flex;
     flex-wrap: wrap;
