@@ -136,22 +136,6 @@ a {
 	color: white;
 }
 
-.cart-block {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 3px;
-}
-
-.cart-count {
-	color: white;
-	font-size: 1em;
-	line-height: 1em;
-}
-
-.cart-ico {
-	content: url(../img/icons/cart-ico.svg);
-}
-
 .login-ico {
 	content: url(../img/icons/login-ico.svg);
 }
@@ -286,7 +270,7 @@ a {
 .onega__cart-login {
 	display: flex;
 	flex-wrap: nowrap;
-	gap: 18px;
+	gap: 10px;
 }
 
 .line {
@@ -390,22 +374,42 @@ nav ul li:hover > ul {
 }
 
 /*=======================CART==========================*/
+.cart-block {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 3px;
+}
+
+.cart-count {
+	color: white;
+	font-size: 1em;
+	line-height: 1em;
+}
+
+.cart-ico {
+	content: url(../img/icons/cart-ico.svg);
+}
+
 
 .cart {
-	display: none;
-	flex-direction: column;
+	display: grid;
+    grid-template-rows: 0.5fr 8fr 2fr;
 	position: fixed;
 	top: 0;
 	right: 0;
 	max-width: 350px;
-	width: 100%;
+	width: 0;
 	height: 100%;
 	z-index: 999;
 	background: #F2F7FC;
+	transition: width 0.7s;
+}
+
+.active {
+	width: 100%;
 }
 
 .cart__title {
-	display: flex;
 	font-family: 'FreeSetDemiC';
 	text-transform: uppercase;
 	font-style: normal;
@@ -418,14 +422,46 @@ nav ul li:hover > ul {
 
 .cart__list {
 	display: flex;
-	flex: 6;
+	flex-direction: column;
+	row-gap: 18px;
 	background: #FFFFFF;
 	padding: 20px 20px 20px 30px;
+	overflow-y: auto;
+}
+
+.cart__list-item {
+	display: grid;
+    grid-template-columns: 0.8fr 3fr 1.2fr 0.3fr;
+    column-gap: 8px;
+	align-items: center;
+}
+
+.list-item__remove-item {
+	content: url(../img/icons/cross-ico.svg);
+}
+
+.cart__item-ico {
+	max-width: 40px;
+	width: 100%;
+	height: 40px;
+	border-radius: 50%;
+	background: url(../img/shop/img-2.jpg) no-repeat;
+	background-size: cover;
+}
+
+.cart__item-title {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	color: #000000;
+}
+
+.cart__item-price {
+
 }
 
 .cart__total {
 	display: flex;
-	flex: 1;
 	padding: 30px;
 	flex-direction: column;
     justify-content: space-between;
